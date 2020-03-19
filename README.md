@@ -15,7 +15,7 @@ For normal LDO, there are 2 issues:
 Thus, my approach is using switch mode buck converter.
 BY controlling the duty cycle of a PWM signal, any voltage within our range can be achieved.
 Example 10V input:
-50%dc, Average = 5V
+50%dc, Average = 5V 
 10%dc, Average = 1V
 90%dc, Average = 9V
 The signal will be control by a arduino nano.
