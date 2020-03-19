@@ -39,7 +39,8 @@ const unsigned char power [] PROGMEM = {
 
 float getSetPwm(){
   int pwmtest = analogRead(setVoltageIn);
-  return pwmtest*(302/1024.0);
+  pwmtest = map(pwmtest,0,1023,0,255);
+  return pwmtest;
 }
 // Return Scaled voltage, max = 15V
 float getSetVoltage(){
@@ -105,10 +106,13 @@ void loop(){
   //display.clearDisplay();      
   //printData(); 
   setPwm = getSetPwm();
-  setPwm = constrain(setPwm,0,255);
+  //setPwm = constrain(setPwm,0,255);
+  Serial.print(analogRead(A0));
+  Serial.print("    Set:");
   Serial.println(setPwm);
   analogWrite(PWM,setPwm);
-  
+  //delay(5000);
+  //analogWrite(PWM,0);
   //Test code
   /*digitalWrite(PWM,LOW);
   delay(10000);
