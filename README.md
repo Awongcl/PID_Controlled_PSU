@@ -13,11 +13,12 @@ For normal LDO, there are 2 issues:
 2. Not power efficient and not idea when dealing with high voltages. (LDO)
 
 Thus, my approach is using switch mode buck converter.
-BY controlling the duty cycle of a PWM signal, any voltage within our range can be achieved.
+BY controlling the duty cycle of a PWM signal, any voltage within our range can be achieved.<br />
 Example 10V input:
-50%dc, Average = 5V 
-10%dc, Average = 1V
-90%dc, Average = 9V
+1. 50%dc, Average = 5V 
+2. 10%dc, Average = 1V
+3. 90%dc, Average = 9V<br/>
+
 The signal will be control by a arduino nano.
 
 Another problem is current draw,it is not idea to use a transister to do the switching due to its low current ratings and resistance.
