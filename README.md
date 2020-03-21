@@ -8,11 +8,9 @@ Welcome, the goal of this project is to build a practical power supply for elect
 
 ### Approach
 If we are able to use LM2596 or LDO's to step down voltage, why do we need this project?
-For normal LDO, there are 2 issues:
-1. Voltage drop when the load tried to draw more current. (Buck)
-2. Not power efficient and not idea when dealing with high voltages. (LDO)
+The main reason is limit current limit feature. Also, if we use LDO, is not efficient.
 
-Thus, my approach is using switch mode buck converter.
+Thus, my approach is using switch mode buck converter with feed back current and voltage.<br/>
 BY controlling the duty cycle of a PWM signal, any voltage within our range can be achieved.<br />
 Example 10V input:
 1. 50%dc, Average = 5V 
@@ -20,12 +18,11 @@ Example 10V input:
 3. 90%dc, Average = 9V<br/>
 
 The signal will be control by a arduino nano.
-
-Another problem is current draw,it is not idea to use a transister to do the switching due to its low current ratings and resistance.
+Another problem is current draw,it is not ideal to use a transister to do the switching due to its low current ratings and resistance.
 A mosfet is suitable for the project because the resisance of VGS is almost 0 when a high voltage is fed to the gate.
 Resulting in minimal power lose.
 
-For the voltage regulating/accuracy part, i chose to USD a closed loop PID system with volatge and current feedbacks for maximum accuracy.
+For the voltage regulating/accuracy part,closed loop PID system is used with volatge and current feedbacks for maximum accuracy.
 
 ### Implementation
 Things to consider:
@@ -33,5 +30,7 @@ Things to consider:
 2. What is the output voltage/current do we want.
 3. Is the output voltage well regulated?
 4. Is the output voltage accurate?
+
+This is the schematic for the project:
 
 
