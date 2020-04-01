@@ -1,4 +1,5 @@
-# **PID_Controlled_PSU wiki**  ![](Images/Power.jpg)
+![](Images/Power.jpg)
+# **Switch Mode Power Supply with current limit wiki**  
 Welcome, the goal of this project is to build a practical power supply for electronics.
 ### Requirements:
 1. Voltage output from range **1.8V to 15V**, which is most suitable for electronics projects.
