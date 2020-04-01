@@ -9,11 +9,11 @@ Welcome, the goal of this project is to build a practical power supply for elect
 
 ### Approach
 If we are able to use LM2596 or LDO's to step down voltage, why do we need this project?
-The main reason is limit current limit feature. Also, if we use LDO, is not efficient.
+The main reason is limit current limit feature. 
 
 Thus, my approach is using switch mode buck converter with feed back current and voltage.<br/>
 BY controlling the duty cycle of a PWM signal, any voltage within our range can be achieved.<br />
-Example 10V input:
+Example for 10V input:
 1. 50%dc, Average = 5V 
 2. 10%dc, Average = 1V
 3. 90%dc, Average = 9V<br/>
@@ -32,6 +32,6 @@ Things to consider:
 3. Is the output voltage well regulated?
 4. Is the output voltage accurate?
 
-This is the schematic for the project:
+Schematic for the project:
 
 
