@@ -1,6 +1,10 @@
 ![](Images/Power.jpg)
 # **Switch Mode Power Supply with current limit wiki**  
-Welcome, the goal of this project is to build a practical power supply for electronics.
+Welcome, the goal of this project is to build a practical power supply for electronics.<br/>
+**Learning Goals**
+1. Transistors and mmosfets
+2. Switch mode (PWM) power supplys, flywheel circuit
+3. How to smooth out a PSU output
 ### Requirements:
 1. Voltage output from range **1.8V to 15V**, which is most suitable for electronics projects.
 2. **Limited current** feature, to protect smaller devices and mistakes can be forgiving.
