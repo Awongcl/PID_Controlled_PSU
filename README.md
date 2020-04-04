@@ -12,22 +12,18 @@ Welcome, the goal of this project is to build a practical power supply for elect
 4. Small can compact, safe to use at the same time.
 
 ### Approach
-If we are able to use LM2596 or LDO's to step down voltage, why do we need this project?
-The main reason is limit current limit feature. 
+We want to have our own current limiting feature that is why we need control of the PWM signal in the switching circuit.
 
 Thus, my approach is using switch mode buck converter with feed back current and voltage.<br/>
-BY controlling the duty cycle of a PWM signal, any voltage within our range can be achieved.<br />
+BY controlling the duty cycle of a PWM signal using Arduino, any voltage within our range can be achieved.<br />
 Example for 10V input:
 1. 50%dc, Average = 5V 
 2. 10%dc, Average = 1V
 3. 90%dc, Average = 9V<br/>
 
-The signal will be control by a arduino nano.
 Another problem is current draw,it is not ideal to use a transister to do the switching due to its low current ratings and resistance.
 A mosfet is suitable for the project because the resisance of VGS is almost 0 when a high voltage is fed to the gate.
 Resulting in minimal power lose.
-
-For the voltage regulating/accuracy part,closed loop PID system is used with volatge and current feedbacks for maximum accuracy.
 
 ### Implementation
 Things to consider:
@@ -38,5 +34,6 @@ Things to consider:
 
 Schematic for the project: <br/>
 ![](Images/Schematic.jpg)
+Product:
 
 
