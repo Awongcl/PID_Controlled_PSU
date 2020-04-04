@@ -36,6 +36,7 @@ Things to consider:
 3. Is the output voltage well regulated?
 4. Is the output voltage accurate?
 
-Schematic for the project:
+Schematic for the project: <br/>
+![](Images/Schematic.jpg)
 
 
