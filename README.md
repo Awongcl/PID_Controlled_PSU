@@ -1,10 +1,9 @@
-![](Images/Power.jpg)
-# **Switch Mode Power Supply with current limit wiki**  
+# **Switch Mode Power Supply with current limit wiki**![](Images/Power.jpg)  
 Welcome, the goal of this project is to build a practical power supply for electronics.<br/>
 **Learning Goals**
-1. Transistors and mosfets, buck converters, Rectifiers
-2. Switch mode (PWM) power supplys, flywheel circuit
-3. How to smooth out a PSU output
+1. Transistors and mosfets, buck converters, Rectifiers.
+2. Switch mode (PWM) power supplys, flywheel circuit.
+3. How to smooth out a PSU output.
 ### Requirements:
 1. Voltage output from range **1.8V to 15V**, which is most suitable for electronics projects.
 2. **Limited current** feature, to protect smaller devices and mistakes can be forgiving.
@@ -40,5 +39,7 @@ The red circled area is the switching part of the circuit like shown in the sche
 Switches are also added to turn the output ON/OFF when the PSU is on.<br/>
 There is a additional buck converter on the left to power the 5V arduino, also 2 potentiometer below to the set voltage and current limit.<br/>
 **Testing and future improvements:**
+![](Images/Result.jpg)
+
 
 
