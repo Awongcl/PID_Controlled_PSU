@@ -39,5 +39,6 @@ Things to consider:
 The red circled area is the switching part of the circuit like shown in the schematic. <br/>
 Switches are also added to turn the output ON/OFF when the PSU is on.<br/>
 There is a additional buck converter on the left to power the 5V arduino, also 2 potentiometer below to the set voltage and current limit.<br/>
+**Testing and future improvements:**
 
 
