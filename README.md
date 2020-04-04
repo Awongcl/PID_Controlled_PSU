@@ -2,7 +2,7 @@
 # **Switch Mode Power Supply with current limit wiki**  
 Welcome, the goal of this project is to build a practical power supply for electronics.<br/>
 **Learning Goals**
-1. Transistors and mosfets, buck converters
+1. Transistors and mosfets, buck converters, Rectifiers
 2. Switch mode (PWM) power supplys, flywheel circuit
 3. How to smooth out a PSU output
 ### Requirements:
