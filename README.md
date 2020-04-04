@@ -33,12 +33,12 @@ Things to consider:
 
 **Schematic for the project:** <br/>
 ![](Images/Schematic.jpg)
-**Prototype/Product:**
+# Prototype/Product:<br/>
 ![](Images/Product2.jpg)
 The red circled area is the switching part of the circuit like shown in the schematic. <br/>
 Switches are also added to turn the output ON/OFF when the PSU is on.<br/>
 There is a additional buck converter on the left to power the 5V arduino, also 2 potentiometer below to the set voltage and current limit.<br/>
-**Testing and future improvements:**
+# Testing and future improvements:<br/>
 After testing, the circuit is able to output Set voltage and limit current at around 0.1V/I accuracy, which is not bad considering the switching frequency is so low and it takes time for the Arduino to read the feedback then adjust.<br/>
 
 However, one crutial downside of this project yet to be solve is output voltage spike, which is the inrushed power due to the LC circuit.<br/>
