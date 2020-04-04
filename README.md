@@ -42,16 +42,16 @@ There is a additional buck converter on the left to power the 5V arduino, also 2
 After testing, the circuit is able to output Set voltage and limit current at around 0.1V/I accuracy, which is not bad considering the switching frequency is so low and it takes time for the Arduino to read the feedback then adjust.<br/>
 
 However, one crutial downside of this project yet to be solve is output voltage spike, which is the inrushed power due to the LC circuit.<br/>
-Picture above is a normal graph for a regulated output when power on, while the bottome one is the output graph for this circuit.<br/>
+Picture above is the transcient response for a comercial regulated output when power is switched on, while the bottome one is the transcient response for this circuit.<br/>
 The first graph is able to produce a soft start slope up to the targeted voltage.<br/>
 While this circuit produces a sharpe spike **(2-3V)** above targeted before regulating, even a large capacitor is added to smooth out the output<br/>
 ![](Images/Result.jpg)<br/>
 
 ### Conclusion
-The project consist of indepth basic understanding of components like transitors and mosfets.<br/>
+This project requires indepth basic understanding of components like transitors and mosfets.<br/>
 Also how a feedback system works in a switch mode converter.<br/>
 This project is **good for powering normal electronics, however, due the the voltage spike mentioned above, is not is quite suitable to power sensitive electroncs.** (I've tested it and it fried some of my chips).<br/>
-Thus, find method to suppress the spike will be a future improvement.<br/>
+Thus, finding method to suppress the spike will be a future improvement.<br/>
 
 
 
