@@ -39,9 +39,13 @@ The red circled area is the switching part of the circuit like shown in the sche
 Switches are also added to turn the output ON/OFF when the PSU is on.<br/>
 There is a additional buck converter on the left to power the 5V arduino, also 2 potentiometer below to the set voltage and current limit.<br/>
 **Testing and future improvements:**
+After testing, the circuit is able to output Set voltage and limit current at around 0.1V/I accuracy, which is not bad considering the switching frequency is so low and it takes time for the Arduino to read the feedback then adjust.<br/>
+
+However, one crutial downside of this project yet to be solve is output voltage spike, which is the inrushed power due to the LC circuit.<br/>
+Pciture above is a normal graph for a regulated output when power on, while the bottome one is the output graph for this circuit.<br/>
+The first graph is able to produce a soft start slope up to the targeted voltage.<br/>
+While this circuit produces a sharpe spike (2-3V) above targeted before regulating.<br/>
 ![](Images/Result.jpg)
-After testing, the circuit is able to output Set voltage and limit current at around 0.1V/I accuracy, which is not bad considering the switching frequency is so low and it takes time for the Arduino to read the feedback then adjust.
-However, one crutial downside of this project yet to be solve is output voltage spike, which is the inrushed power due to the LC circuit.
 
 
 
